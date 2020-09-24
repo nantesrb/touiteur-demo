@@ -1,11 +1,19 @@
-<!-- app/views/messages/new.html.erb -->
-<h1>Nouveau message</h1>
-<%= form_for @message do |f| %>
-  <%= f.label :content, 'Contenu' %>
-  <%= f.text_area :content %>
-
-  <%= f.label :author, 'Auteur' %>
-  <%= f.text_field :author %>
-
-  <%= f.submit 'Ajouter mon message' %>
-<% end %>
+<div class="container-sm py-4">
+  <h1>
+    Nouveau message
+  </h1>
+  <hr>
+  <div class="card w-50 mx-auto p-4 bg-light">
+    <%= form_for @message do |f| %>
+      <div class="form-group">
+        <%= f.label :content, 'Contenu' %>
+        <%= f.text_area :content, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :author, 'Auteur' %>
+        <%= f.text_field :author, class: "form-control" %>
+      </div>
+      <%= f.submit 'Ajouter mon message', class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+fr:
+  date:
+    day_names: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
+  time:
+    formats:
+      default: "%A %d %B %Y à %H:%M"
