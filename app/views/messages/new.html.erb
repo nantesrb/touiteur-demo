@@ -1,0 +1,11 @@
+<!-- app/views/messages/new.html.erb -->
+<h1>Nouveau message</h1>
+<%= form_for @message do |f| %>
+  <%= f.label :content, 'Contenu' %>
+  <%= f.text_area :content %>
+
+  <%= f.label :author, 'Auteur' %>
+  <%= f.text_field :author %>
+
+  <%= f.submit 'Ajouter mon message' %>
+<% end %>
